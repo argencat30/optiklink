@@ -31,7 +31,7 @@ jobs:
 
       - name: ⚙ 设置代理 (sing-box)
         env:
-          NODE_LINK: ${{ secrets.NODE_LINK }}
+          NODE_LINK: ${{ secrets.NODE_LINK_RENEW }}
         run: |
           set -euo pipefail
           if [ -z "${NODE_LINK:-}" ]; then
